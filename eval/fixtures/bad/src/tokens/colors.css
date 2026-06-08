@@ -1,0 +1,9 @@
+:root {
+  --color-brand: oklch(0.7 0.15 250);
+  --color-primary: oklch(0.7 0.15 250);
+  --color-text-on-brand: oklch(0.75 0.05 250);  /* 대비 부족하게 */
+  --color-danger: oklch(0.65 0.2 25);
+  --color-text-on-danger: oklch(0.7 0.05 25);    /* 대비 부족 */
+  --color-bg: oklch(1 0 0);
+  --color-text: oklch(0.2 0 0);
+}

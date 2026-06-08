@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+storybook-static/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Test outputs
+playwright-report/
+test-results/
+
+# Sentinel files (훅 우회용 임시 마커 — 절대 커밋 금지)
+.claude/.ds-token-active
+.claude/.ds-component-active
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Misc
+*.tsbuildinfo
+
+# Eval 결과 (기준선 제외)
+eval/results/*.json
+!eval/results/baseline.json

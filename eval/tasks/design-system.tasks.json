@@ -1,0 +1,41 @@
+{
+  "version": "0.3",
+  "description": "harness-core 범용 Eval 태스크. 특정 프로젝트가 아닌, 어떤 디자인 시스템 산출물에도 적용되는 검사. v0.2 CRITICAL 5건을 범용 규칙으로 추상화. 대비 검사는 기존 a11y-contrast-checker 엔진을 재사용한다.",
+  "tasks": [
+    {
+      "id": "T1-contrast",
+      "title": "시맨틱 색상 페어 WCAG AA + 다크 동등성",
+      "engine": "a11y-contrast-checker (재사용)",
+      "weight": "high",
+      "origin": "v0.2 CRITICAL: danger 3.82:1, 다크 primary 2.69:1, text-subtle 4.41:1 등"
+    },
+    {
+      "id": "T2-no-hardcoding",
+      "title": "컴포넌트 하드코딩 금지 (hex/px/Tailwind 색상 클래스)",
+      "engine": "scan: noHardcoding",
+      "weight": "high",
+      "origin": "detect-hardcoded 훅의 산출물 정합성 재검증"
+    },
+    {
+      "id": "T3-semantic-alias",
+      "title": "컴포넌트가 raw scale 대신 semantic alias 사용",
+      "engine": "scan: usesSemanticAlias",
+      "weight": "medium",
+      "origin": "v0.2: shadcn-wrapper가 raw scale 대신 alias 쓰도록 패치한 부분 검증"
+    },
+    {
+      "id": "T4-wireframe-gray",
+      "title": "와이어프레임 회색 전용 (시맨틱 색상 차단)",
+      "engine": "scan: wireframeGrayscale",
+      "weight": "medium",
+      "origin": "enforce-grayscale 훅의 산출물 정합성 재검증"
+    },
+    {
+      "id": "T5-a11y-attrs",
+      "title": "이미지 alt 속성 존재",
+      "engine": "scan: a11yAttrs",
+      "weight": "low",
+      "origin": "check-a11y-attrs 훅(경고성) 산출물 검증"
+    }
+  ]
+}

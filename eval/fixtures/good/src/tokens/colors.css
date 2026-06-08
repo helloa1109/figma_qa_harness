@@ -1,0 +1,10 @@
+:root {
+  --color-brand: oklch(0.5 0.18 250);
+  --color-primary: oklch(0.5 0.18 250);
+  /* 회귀 테스트용 주석: 닫는 중괄호 } 가 들어있어도 파서가 안 깨져야 함 } */
+  --color-text-on-brand: oklch(1 0 0);
+  --color-danger: oklch(0.45 0.18 25);
+  --color-text-on-danger: oklch(1 0 0);
+  --color-bg: oklch(1 0 0);
+  --color-text: oklch(0.2 0 0);
+}

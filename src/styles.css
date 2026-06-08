@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+/* Pretendard 기본값 (즉시 적용).
+   /init 실행 후에는 src/tokens/typography.css의 --font-sans가 우선 적용됩니다.
+   이 블록은 토큰 생성 전에도 폰트가 보이게 하는 폴백입니다. */
+@theme {
+  --font-sans:
+    "Pretendard Variable", Pretendard, system-ui, -apple-system,
+    "Apple SD Gothic Neo", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* /init 실행 후 ds-token-builder 에이전트가 아래 한 줄의 주석을 풀어 토큰을 활성화합니다.
+   활성화 = 아래 줄을 정확히  @import "./tokens/index.css";  로 교체. */
+/* @import "./tokens/index.css"; */
