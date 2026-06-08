@@ -1,8 +1,8 @@
 # Harness Core
 
-> Figma MCP + shadcn/ui 기반 **디자인 시스템 자동화 하네스**.
-> 새 프로젝트마다 다시 만들 필요 없는, 재사용 가능한 메타 프레임워크.
-> [📖 전체 사용 매뉴얼 (PDF)](docs/manual/harness-core-manual-v0.6.0.pdf)
+> Figma MCP + shadcn/ui 기반 **디자인 시스템 자동화 하네스**.<br/>
+> 새 프로젝트마다 다시 만들 필요 없는, 재사용 가능한 메타 프레임워크.<br/>
+> [📖 전체 사용 매뉴얼 (PDF)](https://github.com/helloa1109/figma_qa_harness/blob/main/docs/manual/harness-core-manual-v0.6.0..pdf)<br/>
 > **v0.6** (2026-06-08): 화면설계서(`/screen-spec`) 추가 — 회색 와이어 다음 단계로 인터랙션 명세(흐름 + 콜아웃 + Screen ID + Description 표)를 Figma에 생성. (v0.5: Figma QA · v0.4: Figma 빌더) [CHANGELOG.md](./CHANGELOG.md) 참조.
 
 
